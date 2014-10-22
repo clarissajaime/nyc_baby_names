@@ -1,0 +1,7 @@
+<h1>Popular baby names in New York</h1>
+
+<ul>
+	<% @baby_names.each do |baby| %>
+	<li class="baby"><%= baby.name %></li>
+	<% end %>
+</ul>

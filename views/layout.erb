@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Baby Names Application">
+
+	<title>Baby names data</title>
+	
+</head>
+<body>
+    <%= yield %>
+
+<script>
+function onHover(event){
+  var node = event.target;
+  // Modify the node here! (e.g. color)
+  node.style.background = "#dddddd";
+};
+
+// replace `data-class-name` with html class you use for a row of your data
+window.onload = function() {
+  var rows = document.getElementsByClassName("baby");
+  for (var i = 0; i < rows.length; i++) {
+    rows[i].addEventListener('mouseover', onHover);
+  };
+};
+</script>
+</body>
+</html>
